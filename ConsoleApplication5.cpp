@@ -128,20 +128,20 @@ int main() {
     {
         string choice;
         cin >> choice;
-        if (choice == "ADD")
+        if (choice == "ADD" || choice == "add")
             addContact();
-        else if (choice == "UPDATE")
+        else if (choice == "UPDATE" || choice == "update")
             updateContact();
-        else if (choice == "RETRIEVE")
+        else if (choice == "RETRIEVE" || choice == "retrieve")
             retrieveContact();
-        else if (choice == "DELETE")
+        else if (choice == "DELETE" || choice == "delete")
             deleteContact();
-        else if (choice == "SHOW")
+        else if (choice == "SHOW" || choice == "show")
         {
             showAllContacts();
             return 0;
         }
-        else if (choice == "EXIT")
+        else if (choice == "EXIT" || choice == "exit")
         {
             saveContactsToFile();
             return 0;
